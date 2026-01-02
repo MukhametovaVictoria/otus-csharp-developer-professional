@@ -1,49 +1,71 @@
-# C-_Developer.Professional.Homeworks
+# C# Developer Professional — OTUS Training Projects
 
-Домашнее задание по параллельному считыванию файлов
+This repository contains practical assignments and projects completed as part of the **C# Developer.Professional** course by **OTUS**.
 
-Краткое описание: 
-1. Создана папка с 3 файлами.
-2. В Program.cs реализовано параллельное считывание файлов через Task.WhenAll(), которое вызывает функцию считывания файла и подсчета пробелов в нем.
-3. Console.ReadKey() добавлен для того, чтобы не было путаницы при выводе строк в консоль. Без этого новый запрос на введение пути до папки появляется раньше, чем результат считывания всех файлов, если файлов много.
+The course was an **official 6-month professional training program**, focused on advanced C# and .NET development concepts. Upon completion, a certificate was awarded.
 
-Домашнее задание по делегатам
+---
 
-Краткое описание:
-1. Создан класс аргументов события FileArgs.
-2. Создан класс с функцией расширения GetMax.
-3. Создан класс конвертер в дробное число с плавающей точкой (float).
-4. Создан класс поиска FileSearcher, где и происходят все действия.
-5. В классе Program у пользователя запрашивается директория, паттерн поиска файлов, расширение, при нахождении которого прервать поиск.
+## 📌 About the Course
 
-Домашнее задание по сериализации
+- **Provider:** OTUS
+- **Program:** C# Developer.Professional
+- **Duration:** 6 months
+- **Format:** Practice-oriented training with regular homework and code reviews
+- **Status:** Completed (certificate obtained)
 
-Краткое описание:
-1. Создан класс сериализатор. Сделала не статическим, т.к. мне хотелось, чтобы часть действий выполнялась в конструкторе.
-2. Создан тестовый класс F, наследуемый от ISerializable с атрибутом [Serializable]. Помимо него еще создан класс SomeClass для доп проверки.
-3. Создан класс таймер для замера времени выполнения.
-4. Количество итераций для всех действий: 100000 (сто тысяч)
+---
 
-Домашнее задание по принципам SOLID
-  
-  Краткое описание реализации:
-  1. У нас есть классы меню, где указано соотношение "Пункт меню" - "Метод для вызова при выборе этого пункта" (подробнее п.4).
-  2. Класс MenuService выполняет переходы по пунктам меню, в завимости от того, какую реализацию IMenu в него передать.
-  3. Переходы осуществляются с помощью класса Invoker, который вызывает переданные в него методы.
-  4. Реализация IMenu принимает на вход BaseSettings, а точнее любую конкретную реализацию BaseSettings. В данном случае это класс Settings.
-     IMenu - это что-то вроде объекта справочника. Он хранит отношение "Пункт меню" - "Метод для вызова при выборе этого пункта".
-  
-  Итого: можно создать любой класс от BaseSettings с кастомными настройками, затем создать любой класс от IMenu и все это передать в MenuService.
+## 🧠 What This Repository Demonstrates
 
-  MenuService может что-то вернуть одним из своих методов, например GetResultByDecision() - получаем результат выполнения метода выбранного пункта меню. Дальше уже решаем что с этим результатом делать.
+This project showcases my ability to:
 
-  Для классов описала какие принципы попыталась реализовать.
-  Кратко: 
-  1. BaseSettings - Реализация принципа D - Dependency inversion И O - Open/Closed
-  2. Invoker - Реализация принципа S -Single responsibility
-  3. MenuService - Принципы S, L, D
-  4. IMenu - Реализация принципа L - Liskov substitution
-  5. IGenerator и ITextWriter - Реализация принципа I - Interface segregation
+- write clean, maintainable C# code
+- work with advanced language features and OOP principles
+- design and implement application logic
+- follow best practices in .NET development
+- solve non-trivial programming problems independently
 
-     Более подробное описание в файлах классов.
-     
+Assignments were designed to simulate **real-world backend development tasks**, not just academic exercises.
+
+---
+
+## 🛠 Topics & Technologies Covered
+
+Depending on the module, tasks include work with:
+
+- C# (.NET)
+- Object-Oriented Programming (OOP)
+- SOLID principles
+- Collections and LINQ
+- Multithreading and async/await
+- Exception handling
+- Design patterns
+- Unit testing
+- Working with files and data streams
+
+*(Specific tasks and implementations can be found in the corresponding folders.)*
+
+---
+
+## 📂 Project Structure
+
+Each folder represents a separate assignment or module from the course and contains:
+- problem description
+- implementation
+- additional notes or comments where applicable
+
+---
+
+## 🎯 Purpose of This Repository
+
+This repository is part of my professional portfolio and is intended to demonstrate:
+- continuous learning
+- structured approach to problem solving
+- readiness for real-world C# / .NET development
+
+---
+
+## 📜 Certificate
+
+The course was successfully completed, and an official certificate was obtained.
